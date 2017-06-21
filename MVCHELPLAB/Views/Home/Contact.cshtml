@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title</h2>
+<address>
+    If you wish to connect with the HELP Lab team via e-mail, please contact Chris Hundhausen at <a href="mailto:hundhaus@wsu.edu">hundhaus@wsu.edu</a>.
+</address>
+
+<address>
+The HELP Lab (EME 228) is located in the <a href="https://school.eecs.wsu.edu/">School of Electrical Engineering and Computer Science</a> wing of the Voiland College of Engineering and Architecture building at Washington State University.
+    <br />
+    <br /> <b>Street Address: </b>
+    <br />355 NE Spokane St, EME 228
+    <br />Pullman, WA 99163
+</address>
+
+<div id="map"></div>
+<script>
+    function initMap() {
+        var helplab = { lat: 46.7305936, lng: -117.1693309 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: helplab
+        });
+        var marker = new google.maps.Marker({
+            position: helplab,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd4IpwRHgwOHxQt2DAxG5xpmM055-1VZw&callback=initMap">
+</script>
+
+
+
+

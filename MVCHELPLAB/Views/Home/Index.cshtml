@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+    /* body {
+        background-color: #5e6a71;
+        background-image: url("/Content/Images/debut-light.png");
+    }
+    footer {
+        background-color: white;
+        height: 200px;
+        padding-top: 12px;
+        border-radius: 10px;
+    }
+    hr {
+        border-top: none;
+    }
+    container {
+        border-radius: 10px;
+    }
+       */
+
+
+
+</style>
+
+<div class="jumbotron jumbotron-special">
+    <img class="img-responsive" src="/Content/Images/logo.png" style="display:block; margin:0 auto;" />
+    <h2><b>Human-centered Environments for Learning and Programming Lab</b></h2>
+    <p>
+        Helping people learn and program better through research and technology
+    </p>
+
+</div>
+    <div class="container">
+        <h4>The <b>HELP Lab</b> at <a href="http://wsu.edu" target="_blank">Washington State University </a><span class="glyphicon glyphicon-new-window"></span> performs research at the intersection of human-computer interaction and education. Using the diverse methods of human-computer interaction, we design and empirically evaluate computer technologies and pedagogical approaches that help undergraduate students learn within the domains of engineering and computer science.</h4>
+    </div> 
+<br />
+<br />
+<div class="row">
+    <div class="col-sm-4"><img class="img-responsive" src="/Content/Images/about.png" style="display:block; margin:0 auto;" /><br /><a href=@Url.Action("About", "Home")><button style="display:block;margin:0 auto; background-color:#990000; border-color:#990000;" type="button" class="btn btn-primary btn-md">Learn more about HELP Lab</button></a></div>
+    <div class="col-sm-4"><img class="img-responsive" src="/Content/Images/tool.png" style="display:block; margin:0 auto;" /><br /><a href=@Url.Action("Index", "Projects")><button style="display: block; margin: 0 auto; background-color: #990000; border-color: #990000;" type="button" class="btn btn-primary btn-md">Learn about our projects</button></a></div>
+    <div class="col-sm-4"><img class="img-responsive" src="/Content/Images/publications.png" style="display:block; margin:0 auto;" /><br /><a href=@Url.Action("Index", "Projects")><button style="display: block; margin: 0 auto; background-color: #990000; border-color: #990000;" type="button" class="btn btn-primary btn-md">Read our publications</button></a></div>
+</div>

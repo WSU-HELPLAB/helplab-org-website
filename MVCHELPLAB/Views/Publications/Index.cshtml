@@ -1,0 +1,126 @@
+﻿
+@{
+    ViewBag.Title = "Publications";
+}
+
+<h2>Publications</h2>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.2.0/knockout-min.js"></script>
+Filter Publications:
+<select id="filter" data-bind="options: displays, value:selectedDisplay">
+    <option value="Show All Publications">Show All Publications</option>
+    <option value="Chris Hundhausen">Chris Hundhausen</option>
+    <option value="Anu Agrawal">Anu Agrawal</option>
+    <option value="Pawan Agarwal">Pawan Agrawal</option>
+    <option value="Jonathan Brown">Jonathan Brown</option>
+    <option value="Adam Carter">Adam Carter</option>
+    <option value="Sean Farley">Sean Farley</option>
+    <option value="Cole Nevins">Cole Nevins</option>
+    <option value="Andreas Stefik">Andreas Stefik</option>
+    <option value="Stephen Trent">Stephen Trent</option>
+    <option value="ravikiran-vatrapu">Ravikiran Vatrapu</option>
+    <option value="josh-wingstrom">Josh Wingstrom</option>
+</select>
+
+<div id="publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Show All Publications'">Loading publications...</div>
+<div id="carter-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Adam Carter'">Loading publications...</div>
+<div id="hundhausen-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Chris Hundhausen'">Loading publications...</div>
+<div id="agrawal-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Anu Agrawal'">Loading publications...</div>
+<div id="pagrawal-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Pawan Agrawal'">Loading publications...</div>
+<div id="brown-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Jonathan Brown'">Loading publications...</div>
+<div id="farley-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Sean Farley'">Loading publications...</div>
+<div id="nevins-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Cole Nevins'">Loading publications...</div>
+<div id="stefik-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Andreas Stefik'">Loading publications...</div>
+<div id="trent-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Stephen Trent'">Loading publications...</div>
+<div id="vatrapu-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Ravikiran Vatrapu'">Loading publications...</div>
+<div id="wingstrom-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Josh Wingstrom'">Loading publications...</div>
+
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script src="http://publicationslist.org/embed.js"></script>
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script>
+    tag_filter = "chris-hundhausen";
+    target_div = "hundhausen-publistdiv";
+</script>
+<script src="http://publicationslist.org/embed.js"></script>
+
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script>
+    tag_filter = "adam-carter";
+    target_div = "carter-publistdiv";
+</script>
+<script src="http://publicationslist.org/embed.js"></script>
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script>
+    tag_filter = "anu-agrawal";
+    target_div = "agrawal-publistdiv";
+</script>
+<script src="http://publicationslist.org/embed.js"></script>
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script>
+    tag_filter = "pawan-agrawal";
+    target_div = "pagrawal-publistdiv";
+</script>
+<script src="http://publicationslist.org/embed.js"></script>
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script>
+    tag_filter = "jonathan-brown";
+    target_div = "brown-publistdiv";
+</script>
+<script src="http://publicationslist.org/embed.js"></script>
+
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script>
+    tag_filter = "sean-farley";
+    target_div = "farley-publistdiv";
+</script>
+<script src="http://publicationslist.org/embed.js"></script>
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script>
+    tag_filter = "cole-nevins";
+    target_div = "nevins-publistdiv";
+</script>
+<script src="http://publicationslist.org/embed.js"></script>
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script>
+    tag_filter = "andreas-stefik";
+    target_div = "stefik-publistdiv";
+</script>
+<script src="http://publicationslist.org/embed.js"></script>
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script>
+    tag_filter = "stephen-trent";
+    target_div = "trent-publistdiv";
+</script>
+<script src="http://publicationslist.org/embed.js"></script>
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script>
+    tag_filter = "ravikiran-vatrapu";
+    target_div = "vatrapu-publistdiv";
+</script>
+<script src="http://publicationslist.org/embed.js"></script>
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script>
+    tag_filter = "josh-wingstrom";
+    target_div = "wingstrom-publistdiv";
+</script>
+<script src="http://publicationslist.org/embed.js"></script>
+
+<script type="text/javascript">
+    var vm = { selectedDisplay: ko.observable(), displays: ['Show All Publications', 'Chris Hundhausen', 'Anu Agrawal', 'Pawan Agrawal', 'Adam Carter', 'Jonathan Brown', 'Sean Farley', 'Cole Nevins', 'Andreas Stefik', 'Stephen Trent', 'Ravikiran Vatrapu', 'Josh Wingstrom'] }; ko.applyBindings(vm);
+</script> 
