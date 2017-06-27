@@ -14,5 +14,32 @@ namespace MVCHELPLAB.Controllers
         {
             return View();
         }
+
+        public ActionResult OSBLE()
+        {
+            return View();
+        }
+        public ActionResult BlindProgrammingProject()
+        {
+            return View();
+        }
+        public ActionResult ChemProV()
+        {
+            return View();
+        }
+        public ActionResult ProtoWalkthrough()
+        {
+            return View();
+        }
+
+        public ActionResult WOZPro()
+        {
+            return View();
+        }
+
+        public ActionResult ALVIS()
+        {
+            return View();
+        }
 	}
 }

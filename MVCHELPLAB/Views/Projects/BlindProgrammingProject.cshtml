@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Blind Programming Project";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br /><br />
+<a href=@Url.Action("Index", "Projects")><button style="background-color:#990000; border-color:#990000;" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back to Projects</button></a>
+<br /><br />
+
+<h2>Blind Programming Project</h2>
+
+<img src="/Content/Images/thumb-sod.png" /><br /><br />
+<b>Funding source:</b><br /> NSF BPC (no. 0940521)<br /><br />
+<b>Project team:</b><br />Andy Stefik (Southern Illinois University Edwardsville), Chris Hundhausen, Sarah Hawkinson, Jason Neufeld
+<br /><br /><h3><b>Overview:</b></h3><br />To provide the blind and visually-impaired with a way in to computer programming, we are developing a new educational infrastructure consisting of (a) an auditory programming environment called Sodbeans, (b) a computing curriculum rooted in Sodbeans, and (c) web-based community support portal. We are partnering with five schools for the blind to integrate this educational infrastructure into their curricula.
+<br />
+<h3><b>Publications:</b></h3>
+
+<div id="publistdiv" class="publist">Loading publications...</div>
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script src="http://publicationslist.org/embed.js"></script>
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script>
+    tag_filter = "blind-programming";
+    target_div = "publistdiv";
+</script>
+<script src="http://publicationslist.org/embed.js"></script>

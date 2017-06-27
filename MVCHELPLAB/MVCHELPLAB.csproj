@@ -178,6 +178,8 @@
     <Content Include="Content\Images\about.png" />
     <Content Include="Content\Images\avatar1.png" />
     <Content Include="Content\Images\debut-light.png" />
+    <Content Include="Content\Images\github.png" />
+    <Content Include="Content\Images\linkedin.png" />
     <Content Include="Content\Images\logo.PNG" />
     <Content Include="Content\Images\about-pic1.jpg" />
     <Content Include="Content\Images\about-pic2.jpg" />
@@ -198,6 +200,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\Help Lab Release.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -239,6 +242,12 @@
     <Content Include="Views\TeamMember\Index.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
     <Content Include="Views\Opportunities\Index.cshtml" />
+    <Content Include="Views\Projects\OSBLE.cshtml" />
+    <Content Include="Views\Projects\BlindProgrammingProject.cshtml" />
+    <Content Include="Views\Projects\ChemProV.cshtml" />
+    <Content Include="Views\Projects\ProtoWalkthrough.cshtml" />
+    <Content Include="Views\Projects\WOZPro.cshtml" />
+    <Content Include="Views\Projects\ALVIS.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

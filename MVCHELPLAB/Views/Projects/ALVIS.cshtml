@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "ALVIS";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br /><br />
+<a href=@Url.Action("Index", "Projects")><button style="background-color:#990000; border-color:#990000;" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back to projects</button></a>
+<br /><br />
+
+<h2>ALVIS</h2>
+
+<img src="/Content/Images/thumb-alvis.png" /><br /><br />
+<b>Funding source:</b><br />NSF CAREER (no. 0133212 & 0406485), NSF DUE (no. 0530708), NSF CPATH Class I (no. 0721927)<br /><br />
+<b>Project team:</b><br />Jon Brown, Sean Farley, Cole Nevins, Chris Hundhausen
+<br /><br />
+<h3><b>Overview:</b></h3><br /> ALVIS is a novice programming environment with a rich design evolution. Originally targeted for use in a third-year undergraduate algorithms course, ALVIS has since been redesigned specifically for introductory programming students. The modern version of ALVIS (“ALVIS Live!”) supports two key innovations: (a) a dual-representation direct manipulation programming environment; and (b) up-to-the-keystroke semantic feedback in the form of visualizations of program variables and data structures.
+<h3><b>Publications:</b></h3>
+
+<div id="publistdiv" class="publist">Loading publications...</div>
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script src="http://publicationslist.org/embed.js"></script>
+
+<script src="http://publicationslist.org/data/helplab/publist.js"></script>
+<script>
+    tag_filter = "alvis";
+    target_div = "publistdiv";
+</script>
+<script src="http://publicationslist.org/embed.js"></script>

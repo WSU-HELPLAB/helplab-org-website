@@ -86,7 +86,13 @@ body {
 
 
 a{
-    color:#990000
+    color:#990000;
+}
+
+a:hover
+{
+    color:#4d0000;
+    text-decoration:none;
 }
 
  #map 
