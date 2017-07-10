@@ -17,19 +17,27 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("HELP Lab", "Index", "Home", null, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Team", "Index", "TeamMember")</li>
-                    <li>@Html.ActionLink("Projects", "Index", "Projects")</li>
-                    <li>@Html.ActionLink("Publications","Index","Publications")</li>
-                    <li>@Html.ActionLink("Opportunities", "Index", "Opportunities")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
+
+
+            <div class="row">
+        
+                    <div class="col-sm-1"><img class="img-responsive" src="/Content/Images/logo.PNG"></div>
+                    <div class="col-sm-8"><div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" style="padding-bottom:-10px;">
+                        <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Team", "Index", "TeamMember")</li>
+                        <li>@Html.ActionLink("Projects", "Index", "Projects")</li>
+                        <li>@Html.ActionLink("Publications", "Index", "Publications")</li>
+                        <li>@Html.ActionLink("Opportunities", "Index", "Opportunities")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+          </div>
+
+
             </div>
         </div>
     </div>

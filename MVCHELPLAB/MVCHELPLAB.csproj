@@ -175,6 +175,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Collage\Montage.jpg" />
     <Content Include="Content\Images\about.png" />
     <Content Include="Content\Images\avatar1.png" />
     <Content Include="Content\Images\debut-light.png" />
