@@ -11,114 +11,95 @@
 Filter Publications:
 <select id="filter" data-bind="options: displays, value:selectedDisplay">
     <option value="Show All Publications">Show All Publications</option>
-    <option value="Chris Hundhausen">Chris Hundhausen</option>
-    <option value="Anu Agrawal">Anu Agrawal</option>
-    <option value="Pawan Agarwal">Pawan Agrawal</option>
-    <option value="Jonathan Brown">Jonathan Brown</option>
-    <option value="Adam Carter">Adam Carter</option>
-    <option value="Sean Farley">Sean Farley</option>
-    <option value="Cole Nevins">Cole Nevins</option>
-    <option value="Andreas Stefik">Andreas Stefik</option>
-    <option value="Stephen Trent">Stephen Trent</option>
-    <option value="ravikiran-vatrapu">Ravikiran Vatrapu</option>
-    <option value="josh-wingstrom">Josh Wingstrom</option>
+    <option value="Algorithm Visualization">Algorithm Visualization</option>
+    <option value="ALVIS">ALVIS</option>
+    <option value="Blind Programming">Blind Programming</option>
+    <option value="ChemProV">ChemProV</option>
+    <option value="OSBIDE">OSBIDE</option>
+    <option value="OSBLE/OSBLE+">OSBLE/OSBLE+</option>
+    <option value="Prototype Walkthrough">Prototype Walkthrough</option>
+    <option value="Studio Based Learning">Studio Based Learning</option>
+    <option value="WOZ">WOZ</option>
 </select>
 
 <div id="publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Show All Publications'">Loading publications...</div>
-<div id="carter-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Adam Carter'">Loading publications...</div>
-<div id="hundhausen-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Chris Hundhausen'">Loading publications...</div>
-<div id="agrawal-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Anu Agrawal'">Loading publications...</div>
-<div id="pagrawal-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Pawan Agrawal'">Loading publications...</div>
-<div id="brown-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Jonathan Brown'">Loading publications...</div>
-<div id="farley-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Sean Farley'">Loading publications...</div>
-<div id="nevins-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Cole Nevins'">Loading publications...</div>
-<div id="stefik-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Andreas Stefik'">Loading publications...</div>
-<div id="trent-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Stephen Trent'">Loading publications...</div>
-<div id="vatrapu-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Ravikiran Vatrapu'">Loading publications...</div>
-<div id="wingstrom-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Josh Wingstrom'">Loading publications...</div>
-
+<div id="alvis-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='ALVIS'">Loading publications...</div>
+<div id="algovisual-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Algorithm Visualization'">Loading publications...</div>
+<div id="blindprogram-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Blind Programming'">Loading publications...</div>
+<div id="chemprov-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='ChemProV'">Loading publications...</div>
+<div id="osbide-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='OSBIDE'">Loading publications...</div>
+<div id="osble-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='OSBLE/OSBLE+'">Loading publications...</div>
+<div id="protowalk-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Prototype Walkthrough'">Loading publications...</div>
+<div id="sbl-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='Studio Based Learning'">Loading publications...</div>
+<div id="woz-publistdiv" class="publist" data-bind="visible:selectedDisplay()=='WOZ'">Loading publications...</div>
 
 <script src="http://publicationslist.org/data/helplab/publist.js"></script>
 <script src="http://publicationslist.org/embed.js"></script>
 
 <script src="http://publicationslist.org/data/helplab/publist.js"></script>
 <script>
-    tag_filter = "adam-carter";
-    target_div = "carter-publistdiv";
+    tag_filter = "alvis";
+    target_div = "alvis-publistdiv";
 </script>
 <script src="http://publicationslist.org/embed.js"></script>
 
 <script src="http://publicationslist.org/data/helplab/publist.js"></script>
 <script>
-    tag_filter = "chris-hundhausen";
-    target_div = "hundhausen-publistdiv";
+    tag_filter = "algorithm-visualization";
+    target_div = "algovisual-publistdiv";
 </script>
 <script src="http://publicationslist.org/embed.js"></script>
 
 <script src="http://publicationslist.org/data/helplab/publist.js"></script>
 <script>
-    tag_filter = "anu-agrawal";
-    target_div = "agrawal-publistdiv";
+    tag_filter = "blind-programming";
+    target_div = "blindprogram-publistdiv";
 </script>
 <script src="http://publicationslist.org/embed.js"></script>
 
 <script src="http://publicationslist.org/data/helplab/publist.js"></script>
 <script>
-    tag_filter = "pawan-agrawal";
-    target_div = "pagrawal-publistdiv";
+    tag_filter = "chemprov";
+    target_div = "chemprov-publistdiv";
 </script>
 <script src="http://publicationslist.org/embed.js"></script>
 
 <script src="http://publicationslist.org/data/helplab/publist.js"></script>
 <script>
-    tag_filter = "jonathan-brown";
-    target_div = "brown-publistdiv";
+    tag_filter = "osbide";
+    target_div = "osbide-publistdiv";
 </script>
 <script src="http://publicationslist.org/embed.js"></script>
 
 
 <script src="http://publicationslist.org/data/helplab/publist.js"></script>
 <script>
-    tag_filter = "sean-farley";
-    target_div = "farley-publistdiv";
+    tag_filter = "osble";
+    target_div = "osble-publistdiv";
 </script>
 <script src="http://publicationslist.org/embed.js"></script>
 
 <script src="http://publicationslist.org/data/helplab/publist.js"></script>
 <script>
-    tag_filter = "cole-nevins";
-    target_div = "nevins-publistdiv";
+    tag_filter = "protowalk";
+    target_div = "protowalk-publistdiv";
 </script>
 <script src="http://publicationslist.org/embed.js"></script>
 
 <script src="http://publicationslist.org/data/helplab/publist.js"></script>
 <script>
-    tag_filter = "andreas-stefik";
-    target_div = "stefik-publistdiv";
+    tag_filter = "sbl";
+    target_div = "sbl-publistdiv";
 </script>
 <script src="http://publicationslist.org/embed.js"></script>
 
 <script src="http://publicationslist.org/data/helplab/publist.js"></script>
 <script>
-    tag_filter = "stephen-trent";
-    target_div = "trent-publistdiv";
-</script>
-<script src="http://publicationslist.org/embed.js"></script>
-
-<script src="http://publicationslist.org/data/helplab/publist.js"></script>
-<script>
-    tag_filter = "ravikiran-vatrapu";
-    target_div = "vatrapu-publistdiv";
-</script>
-<script src="http://publicationslist.org/embed.js"></script>
-
-<script src="http://publicationslist.org/data/helplab/publist.js"></script>
-<script>
-    tag_filter = "josh-wingstrom";
-    target_div = "wingstrom-publistdiv";
+    tag_filter = "woz";
+    target_div = "woz-publistdiv";
 </script>
 <script src="http://publicationslist.org/embed.js"></script>
 
 <script type="text/javascript">
-    var vm = { selectedDisplay: ko.observable(), displays: ['Show All Publications', 'Chris Hundhausen', 'Anu Agrawal', 'Pawan Agrawal', 'Adam Carter', 'Jonathan Brown', 'Sean Farley', 'Cole Nevins', 'Andreas Stefik', 'Stephen Trent', 'Ravikiran Vatrapu', 'Josh Wingstrom'] }; ko.applyBindings(vm);
+    var vm = { selectedDisplay: ko.observable(), displays: ['Show All Publications', 'Algorithm Visualization', 'ALVIS', 'Blind Programming', 'ChemProV', 'OSBIDE', 'OSBLE/OSBLE+', 'Prototype Walkthrough', 'Studio Based Learning', 'WOZ'] }; ko.applyBindings(vm);
 </script> 
